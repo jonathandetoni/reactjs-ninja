@@ -13,10 +13,18 @@
         <script src="https://cdnjs.cloudflare.com/ajax/libs/react/15.1.0/react-dom.js"></script>
 
         <script>
-            var h1 = React.createElement('h1', null, 'Hellow World Ract')
+            var element = React.createElement('div', null, [
+                    React.createElement('h1', null, [
+                        React.createElement('i', null, 'Teste '),
+                        React.createElement('span', null, ' Span')
+                    ]),
+                    React.createElement('span', null, 'Teste de uma array de elementos')
+                ]
+            );
             
-            ReactDOM.render(h1,document.getElementById('app'))
-            console.log(h1.props.children)
+            ReactDOM.render(element,document.getElementById('app'));
+
+            console.log(element.props.children);
         </script>
     </body>
 </html>
