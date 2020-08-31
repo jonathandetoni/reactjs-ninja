@@ -11,18 +11,13 @@
         </div>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/react/15.1.0/react.js"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/react/15.1.0/react-dom.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/babel-core/5.8.34/browser.min.js"></script>
 
-        <script>
-            var element = React.createElement('div', null, [
-                    React.createElement('h1', null, [
-                        React.createElement('i', null, 'Teste '),
-                        React.createElement('span', null, ' Span')
-                    ]),
-                    React.createElement('span', null, 'Teste de uma array de elementos')
-                ]
+        <script type="text/babel">           
+            ReactDOM.render(
+                <h1>Hellow World</h1>, 
+                document.getElementById('app')
             );
-            
-            ReactDOM.render(element,document.getElementById('app'));
         </script>
     </body>
 </html>
