@@ -1,0 +1,23 @@
+{
+  "name": "reactjs-ninja",
+  "version": "1.0.0",
+  "description": "Atividades realizadas durante o curso de React.js.",
+  "main": "index.js",
+  "dependencies": {
+    "http-server": "^0.12.3"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jonathandetoni/reactjs-ninja.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jonathandetoni/reactjs-ninja/issues"
+  },
+  "homepage": "https://github.com/jonathandetoni/reactjs-ninja#readme"
+}
