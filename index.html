@@ -11,7 +11,11 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/react/15.1.0/react-dom.js" integrity="sha512-SYAv6yPI2ytwfZd1nrA0yA/HxtRk+jcIhjm0LIxPHFM7mkcCQo+/YFivrio49aHGOYKE0hYgwmRPZzoXQQmbQw==" crossorigin="anonymous"></script>
 
     <script>
-        var h1 = React.createElement('h1', null, 'Hello h1 React');
+        var h1 = React.createElement('h1', null, 
+            React.createElement(
+                'span', null, 'Texto Span' 
+            )
+        );
         ReactDOM.render(h1, document.getElementById('app'));
     </script>
 </body>
