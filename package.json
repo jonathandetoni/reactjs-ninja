@@ -6,7 +6,10 @@
   "dependencies": {
     "http-server": "^0.12.3"
   },
-  "devDependencies": {},
+  "devDependencies": {
+    "webpack": "^4.44.2",
+    "webpack-cli": "^3.3.12"
+  },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
