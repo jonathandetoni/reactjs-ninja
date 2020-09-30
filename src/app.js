@@ -1,7 +1,6 @@
 'use strict'
 
-const { Component } = require('react')
-const React = require('react')
+import React, { Component } from 'react'
 
 class Title extends Component{
     render(){
@@ -17,4 +16,4 @@ class Title extends Component{
 //     }
 // })
 
-module.exports = Title
+export default Title
