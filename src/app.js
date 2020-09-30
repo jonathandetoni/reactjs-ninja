@@ -2,7 +2,7 @@
 
 import React, { Component } from 'react'
 
-class Title extends Component{
+class App extends Component{
     render(){
         return(
             <h1>Ola, React com JSX!</h1>
@@ -16,4 +16,4 @@ class Title extends Component{
 //     }
 // })
 
-export default Title
+export default App

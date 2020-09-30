@@ -1,16 +1,29 @@
 'use strict'
 
-const path = require('path');
+const path = require('path')
+const webpack = require('webpack')
 
 module.exports = {
     mode: 'development',
     devtool: 'source-map',
-    entry: path.join(__dirname, 'src', 'index'),
+
+    entry: [
+        'react-hot-loader/patch',
+        'webpack-dev-server/client?http://localhost:3000',
+        'webpack/hot/only-dev-server',
+        path.join(__dirname, 'src', 'index')
+    ],
+
+    plugins: [
+        new webpack.HotModuleReplacementPlugin()
+    ],
+
     output: {
         path: path.join(__dirname, 'dist'),
         filename: 'bundle.js',
         publicPath: '/static/',
     },
+
     module: {
         rules: [{
             test: /\.js$/,

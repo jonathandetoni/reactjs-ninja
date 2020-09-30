@@ -3,9 +3,9 @@
 import React from 'react'
 import ReactDOM from 'react-dom'
 
-import Title from './app'
+import App from './app'
 
 ReactDOM.render(
-    <Title />, 
+    <App />,
     document.querySelector('[data-js="app"]')
 )
