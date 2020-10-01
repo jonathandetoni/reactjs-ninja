@@ -6,7 +6,7 @@ class App extends Component {
   render () {
     return (
       <div className='title'>
-        <Title />
+        <Title name='Jonathan' sobrenome={{ first: 'de', last: 'Toni' }} />
       </div>
     )
   }
