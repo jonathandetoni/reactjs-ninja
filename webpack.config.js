@@ -7,6 +7,12 @@ module.exports = {
     mode: 'development',
     devtool: 'source-map',
 
+    resolve: {
+        alias: {
+          'react-dom': '@hot-loader/react-dom'
+        }
+    },
+
     entry: [
         'react-hot-loader/patch',
         'webpack-dev-server/client?http://localhost:3000',
@@ -25,6 +31,14 @@ module.exports = {
     },
 
     module: {
+        rules: [{
+            test: /\.js$/,
+            exclude: /node_modules/,
+            include: /src/,
+            loader: ['standard-loader'],
+            enforce: 'pre'
+        }],
+
         rules: [{
             test: /\.js$/,
             exclude: /node_modules/,
