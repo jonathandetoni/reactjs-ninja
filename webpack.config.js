@@ -31,19 +31,20 @@ module.exports = {
     },
 
     module: {
-        rules: [{
-            test: /\.js$/,
-            exclude: /node_modules/,
-            include: /src/,
-            loader: ['standard-loader'],
-            enforce: 'pre'
-        }],
-
-        rules: [{
-            test: /\.js$/,
-            exclude: /node_modules/,
-            include: /src/,
-            use: ['babel-loader']
-        }]
+        rules: [
+            {
+                test: /\.js$/,
+                exclude: /node_modules/,
+                include: /src/,
+                loader: 'standard-loader',
+                enforce: 'pre'
+            },
+            {
+                test: /\.js$/,
+                exclude: /node_modules/,
+                include: /src/,
+                use: ['babel-loader']
+            }
+        ]
     }
 }
