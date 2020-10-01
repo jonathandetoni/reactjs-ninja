@@ -1,9 +1,11 @@
 import React, { Component } from 'react'
 
+import Title from './title'
+
 class App extends Component {
   render () {
     return (
-      <h1>Ola, React com JSX!</h1>
+      <h1><Title /></h1>
     )
   }
 }
