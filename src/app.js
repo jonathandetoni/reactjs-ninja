@@ -5,7 +5,9 @@ import Title from './title'
 class App extends Component {
   render () {
     return (
-      <h1><Title /></h1>
+      <div>
+        <Title text='Olá galerinha' />
+      </div>
     )
   }
 }

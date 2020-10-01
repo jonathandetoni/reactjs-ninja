@@ -4,7 +4,9 @@ import React, { Component } from 'react'
 
 class Title extends Component {
   render () {
-    return (<h1>Title</h1>)
+    return (
+      <h1> {this.props.text} </h1>
+    )
   }
 }
 
