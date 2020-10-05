@@ -1,8 +1,10 @@
 import React from 'react'
 import Button from './button'
 
-const likeButton = () => (
-  <Button> Curtir </Button>
+const LikeButton = () => (
+  <Button handleClick={() => alert('like')}>
+    Curtir
+  </Button>
 )
 
-export default likeButton
+export default LikeButton

@@ -5,7 +5,7 @@ import LikeButton from './likeButton'
 class App extends Component {
   render () {
     return (
-      <LikeButton>
+      <LikeButton handleClick={function () { alert('teste') }}>
         Texto botão
       </LikeButton>
     )
